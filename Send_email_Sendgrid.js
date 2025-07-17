@@ -17,7 +17,7 @@ let dynamicData = {
 
 // 4. Construct the SendGrid payload
 let emailPayload = {
-  from: { email: `${emailFrom}`, name: '${signatur_name}' },
+  from: { email: `${emailFrom}`, name: `${signature_name}` },
   personalizations: [{
     to: [{ email: `${emailTo}`}],
     dynamic_template_data: dynamicData
